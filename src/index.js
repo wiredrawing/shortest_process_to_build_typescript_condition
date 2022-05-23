@@ -1,27 +1,18 @@
 
 
-
-
-/**
- * テストクラス
- */
 class TestClass {
 
-  constructor () {
-    console.log("これはコンストラクタ");
-  }
 
-  aMethod() {
-    console.log("aMethod");
+  constructor() {
+
+    console.log("constructor");
   }
 }
 
 
-let testClass = new TestClass();
 
-testClass.aMethod();
-
-
-(() => {
+let arrowFunction = () => {
   alert("アロー関数");
-})();
+}
+
+arrowFunction();

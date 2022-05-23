@@ -1,30 +1,30 @@
 import $ from "jquery"
 
-$(function () {
+let functionHavingTypeParameter = (a: string , b: number) : boolean => {
 
-  class TestClass {
+    console.log(a);
+    console.log(b);
 
+    return true;
+}
+
+let result = functionHavingTypeParameter("あ", 42);
+
+class TypescriptClass {
+
+    a: string;
+    b: number;
 
     constructor(a: string, b: number) {
-      console.log(a);
-      console.log(b);
+        this.a = a;
+        this.b = b;
     }
-  }
+}
 
+let typescriptObject = new TypescriptClass("a",2, );
 
-  // let a = new TestClass(4, "あ");
+$(function () {
 
-  let a = new TestClass("あ", 34);
-
-
-  console.log($);
-
-  let elem: JQuery = $("<h1>").html("H1タグを作成");
-
-  console.log(elem);
-
-  console.log($("div"));
-  $("div").eq(0).append(elem);
-
-})
-
+    let elem: JQuery = $("#sample");
+    elem.html("これはTypescriptで操作しています");
+});

@@ -1,26 +1,32 @@
 {
-  "name": "webpack-test",
+  "name": "shortest_process_to_build_typescript_condition",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiredrawing/shortest_process_to_build_typescript_condition.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiredrawing/shortest_process_to_build_typescript_condition/issues"
+  },
+  "homepage": "https://github.com/wiredrawing/shortest_process_to_build_typescript_condition#readme",
   "devDependencies": {
     "@babel/core": "^7.18.0",
     "@babel/preset-env": "^7.18.0",
     "@types/jquery": "^3.5.14",
     "babel-loader": "^8.2.5",
+    "jquery": "^3.6.0",
     "ts-loader": "^9.3.0",
     "typescript": "^4.6.4",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"
-  },
-  "dependencies": {
-    "jquery": "^3.6.0"
   }
 }
