@@ -1,4 +1,4 @@
-
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 
 module.exports = {
@@ -61,5 +61,8 @@ module.exports = {
     extensions: [
       ".ts", ".js",
     ]
-  }
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+  ]
 }
