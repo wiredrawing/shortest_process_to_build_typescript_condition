@@ -27,4 +27,8 @@ $(function () {
 
     let elem: JQuery = $("#sample");
     elem.html("これはTypescriptで操作しています");
+
+    $(window).on("click", (e) => {
+        console.log("typescript中にwindow要素にイベントを付与する");
+    });
 });
