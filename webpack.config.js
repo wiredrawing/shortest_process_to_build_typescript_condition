@@ -6,7 +6,7 @@ module.exports = {
   // 実際にwebpackでバンドルしたい且つトランスパイルしたいjavascriptの
   // エントリポイント(エントリファイルのパスをここに記載)
   // src/index.js がデフォルト設定となる
-  entry: __dirname + "/src/index.ts",
+  entry: __dirname + "/src/index.js",
 
   // webpackコマンド実行時のモード
   mode: "development",
@@ -40,6 +40,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
+        exclude: "/node_modules/",
         use: {
           loader: "babel-loader",
           options: {
